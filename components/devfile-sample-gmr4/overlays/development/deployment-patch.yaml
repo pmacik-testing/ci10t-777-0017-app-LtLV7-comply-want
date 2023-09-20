@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-gmr4
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-777-0017-tenant/ci10t-777-0017-app/devfile-sample-gmr4@sha256:89d44a97c8b424b41be101acc47e725fa109eddd6d026f7c00fe7325663c8745
+        name: my-nodejs
+        resources: {}
+status: {}
